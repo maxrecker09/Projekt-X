@@ -1,1 +1,29 @@
-Hauptetxt meines Projektes
+\documentclass{beamer}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{german}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{url}
+\usepackage{xcolor} %vonmir
+
+\usepackage{algorithm} %vonmir
+\usepackage[noend]{algpseudocode} %vonmir; noend hilft das kein endif endfor am Ende dasteht
+
+
+\newcommand{\Z}{\mathbb{Z}}% ganze Zahlen, fehlte in Vorlage
+\newcommand{\N}{\mathbb{N}}% natürliche Zahlen, fehlte in Vorlage
+\newcommand{\R}{\mathbb{R}}% reele Zahlen
+\newcommand{\C}{\mathbb{C}}% komplexe Zahlen
+\newcommand{\Q}{\mathbb{Q}}% rationale Zahlen
+\newcommand{\beweis}[1]{\textbf{\structure{Beweis~#1.}}}
+
+
+\newtheorem{thm}{Satz}
+\newtheorem{cor}[thm]{Korollar}
+\newtheorem{lem}[thm]{Lemma}
+\newtheorem{prop}[thm]{Proposition}
+
+
+\setbeamertemplate{theorems}[numbered] %von mir zum Nummerieren
+%\setbeamertemplate{theorems}[normal font]
